@@ -1,0 +1,27 @@
+{
+  "name": "threejs-examples-monorepo",
+  "version": "1.0.0",
+  "description": "Three.js examples in different implementations: vanilla, React and Next.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "vanilla": "cd packages/vanilla-threejs && npx serve",
+    "next": "cd packages/nextjs-r3f && npm run dev",
+    "docs": "cd packages/docs && npx serve"
+  },
+  "keywords": [
+    "three.js",
+    "react",
+    "next.js",
+    "react-three-fiber",
+    "3d",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
