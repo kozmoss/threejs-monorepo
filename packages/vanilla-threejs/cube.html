@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cube</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <script type="module">
+    import { run } from './src/main.js';
+    
+    import { createCubeScene } from './src/scenes/cubeScene.js';
+    run(createCubeScene);
+  </script>
+</body>
+</html>
+
+
