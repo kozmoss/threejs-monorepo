@@ -6,11 +6,12 @@ import { availableModels } from "@/data/availableModels";
 import { ClientSceneWrapper } from "@/components/ClientSceneWrapper";
 import { ModelSelector } from "@/components/modalSelector";
 
-export default async function HomePage({ searchParams }: {searchParams: { model?: string }}) {
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: { model?: string };
+}) {
   const { model } = await searchParams;
-
-
-  // Server-side model seçimi
   const selectedModel =
     availableModels.find((m) => m.path === model) || availableModels[0];
 
@@ -29,7 +30,7 @@ export default async function HomePage({ searchParams }: {searchParams: { model?
         <div className="md:w-1/4 space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Model Seç</CardTitle>
+              <CardTitle>Select Model</CardTitle>
             </CardHeader>
             <CardContent>
               <ModelSelector
