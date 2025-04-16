@@ -22,7 +22,7 @@ export const availableModels: Model[] = [
     },
     {
         name: "Araba",
-        path: "/models/araba.glb",
-        background: "workshop_1k.hdr",
+        path: "/models/car.glb",
+        background: "",
       },
   ];

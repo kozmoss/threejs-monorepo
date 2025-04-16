@@ -21,7 +21,7 @@ export default function Scene({
 }) {
   return (
     <div className="h-full w-full rounded ">
-      {modelPath == "/models/araba.glb" ? (
+      {modelPath == "/models/car.glb" ? (
         <Canvas>
           <Environment
             files="old_depot_2k.hdr"
@@ -38,6 +38,7 @@ export default function Scene({
             far={100}
           />
           <OrbitControls
+            autoRotate
             enableZoom={false}
             enablePan={false}
             minPolarAngle={0}
